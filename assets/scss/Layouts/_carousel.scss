@@ -1,0 +1,72 @@
+// .carousel {
+//     background: url("../img/product-header-bg.jpg") no-repeat bottom center /
+//     cover;
+//   padding: 200px 0;
+
+//   &__action {
+//     display: flex;
+//   }
+
+//   &__btn1 {
+//     @include styleButton(
+//       transparent,
+//       $color-blue-2,
+//       10px,
+//       $color-blue-2,
+//       10px 20px,
+//       #fff,
+//       $color-blue-2
+//     );
+//   }
+//   &__btn2 {
+//     @include styleButton(
+//       linear-gradient(120deg, #60a4f4, #2a73dd),
+//       linear-gradient(120deg, #60a4f4, #2a73dd),
+//       10px,
+//       $color-white-1,
+//       10px 20px,
+//       #fff,
+//       linear-gradient(120deg, #60a4f4, #2a73dd)
+//     );
+//   }
+// }
+.carousel {
+  margin-top: 60px;
+
+  .owl-carousel {
+    .item {
+      img {
+        height: 590px;
+        background-size: contain;
+      }
+    }
+  }
+}
+
+.owl-theme {
+
+  // .owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span
+  .owl-dots {
+    .owl-dot span {
+      margin-right: 15px;
+    }
+
+    .owl-dot {
+      transition: all .3s;
+
+      &:hover span {
+        background: #717474;
+      }
+
+      span {
+        width: 7px;
+        height: 7px;
+        background: #b7c8c2;
+      }
+
+      &.active span {
+        background: #717474;
+      }
+    }
+  }
+}

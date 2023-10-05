@@ -1,0 +1,165 @@
+.modal {
+    .modal-dialog {
+
+        .modal-content {
+            background-color: #b8b6b6;
+
+            .modal-header {
+                margin-top: 30px;
+
+                &::after {
+                    height: 5px;
+                    bottom: 0;
+                    background-color: white;
+                    border: 1px solid aliceblue;
+                    width: 100%;
+                }
+
+            }
+
+        }
+
+        .modal-body {
+            margin-bottom: -20px;
+           
+            h3{
+                font-size: 1.2rem;
+                text-align: center;
+              
+            }
+            .product-link {
+                &:hover {
+                    text-decoration: none;
+                    list-style: none;
+                }
+
+                .product-left {
+                    background-color: #dadada;
+                    text-align: center;
+                    padding: 16px 10px;
+                    height: 280px;
+                }
+            }
+
+            .product-left {
+                cursor: default;
+
+                a {
+                    &:hover {
+                        text-decoration: none;
+                        list-style: none;
+                        cursor: pointer;
+                    }
+                }
+
+                .product-link {
+                    a {
+                        h3 {
+                            &:hover {
+                                list-style: none;
+                                text-decoration: none;
+                            }
+                        }
+
+                    }
+                }
+
+                .product-heading {
+                    text-align: center;
+                    color: black;
+                    cursor: default;
+                }
+
+                .qty-price {
+                    font-size: 1.1rem;
+
+                    .price {
+                        margin-bottom: 10px;
+
+                        &::before {
+                            content: "Giá tiền: ";
+                            font-weight: bold;
+                        }
+
+                    }
+
+                    .qty {
+                        margin-bottom: 10px;
+
+                        .minus-button {
+                            width: 25px;
+                            height: 25px;
+                            text-align: center;
+                            padding: 4.2px 0;
+                            font-size: 15px;
+                            line-height: 0.5;
+                            border-radius: 15px;
+                        }
+
+                        .qty-input {
+                            margin-bottom: 3px;
+                            text-align: center;
+
+                        }
+
+                        .plus-button {
+                            width: 25px;
+                            height: 25px;
+                            text-align: center;
+                            padding: 4.2px 0;
+                            font-size: 15px;
+                            line-height: 0.5;
+                            border-radius: 15px;
+                        }
+                    }
+                }
+
+                .product-right {
+                    .bg-danger {
+                        color: white;
+                        background-color: rgb(96, 86, 86) !important;
+                        padding: 2.5px;
+                        border-radius: 5px;
+
+                    }
+                }
+            }
+        }
+
+        #thanhTien {
+            display: flex !important;
+
+            h3 {
+                margin: 0 6px 0 10px;
+                font-size: 1.3rem;
+            }
+
+            h4 {
+                font-size: 1.3rem;
+                color: red;
+
+            }
+        }
+
+        #thanhToan {
+            h3 {
+                font-size: 1.2rem;
+                text-align: center;
+            }
+        }
+
+        .modal-footer {
+            .modalBtn1 {
+                background-color: rgb(185 28 28);
+                color: $color-white-1;
+                padding: 5px;
+            }
+
+            .btn-primary {
+                background-color: rgb(126 34 206);
+                color: $color-white-1;
+                padding: 5px;
+            }
+        }
+    }
+}

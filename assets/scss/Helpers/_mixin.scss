@@ -1,0 +1,36 @@
+@mixin styleText($fs, $color, $fw) {
+  font-size: $fs;
+  color: $color;
+  font-weight: $fw;
+}
+
+@mixin styleButton($bg, $border, $radius, $color, $padding, $colorHover, $bgHover) {
+  background: $bg;
+  border: 2px solid $border;
+  border-radius: $radius;
+  color: $color;
+  padding: $padding;
+
+  &:hover {
+    background: $bgHover;
+    color: $colorHover;
+  }
+}
+
+// 2 cách thêm darkMode
+@mixin darkMode1() {
+  .darkMode {
+    @content;
+  }
+}
+
+@mixin darkMode2() {
+  .darkMode & {
+    @content;
+  }
+}
+// nghĩa là:
+// .darkMode .header {
+//   background: $color-dark-1;
+// }
+

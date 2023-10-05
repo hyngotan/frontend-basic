@@ -1,0 +1,77 @@
+.project {
+    .blockMenu {
+        display: flex;
+        background: #EBA768;
+        color: white;
+
+        h2 {
+            display: inline-block;
+            margin: 0 11px 0 -29px;
+            background: #2C2C2C;
+            padding: 5px 15px 5px 15px;
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 30px;
+            position: relative;
+            width: 160px;
+
+            &:hover {
+                color: #EBA768;
+            }
+        }
+
+        a {
+            list-style: none;
+            text-decoration: none;
+            margin: 5px 50px 5px 0;
+            color: $color-white-1;
+
+            &:hover {
+                color: rgb(30, 87, 30);
+            }
+        }
+
+        ul {
+            display: flex;
+            list-style: none;
+
+            li {
+                margin-top: 7px;
+
+                a {
+                    display: inline-block;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+    .tab-content {
+        .tab-pane {
+            .row {
+                .card {
+                    background-color: #fff;
+                    border-radius: 4px;
+                    overflow: hidden;
+
+                    .card-img-top {
+                        padding: 16px 10px;
+                        height: 300px;
+                    }
+
+                    .btn {
+                        width: 100%;
+                        padding: 5px;
+                        background-image: linear-gradient(to right, #bdbaba 0%, #5f605f 51%, #393839 100%);
+                        color: #fff;
+                        background-size: 200% auto;
+                        transition: 0.5s;
+
+                        &:hover {
+                            background-position: right center;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
